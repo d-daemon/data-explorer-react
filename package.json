@@ -1,0 +1,40 @@
+{
+  "name": "data-explorer",
+  "version": "1.0.0",
+  "description": "Data Explorer Application",
+  "main": "server.js",
+  "scripts": {
+    "install": "npm run install:all",
+    "install:all": " cd client && npm install && cd ../server && npm install && npm run build",
+    "test": "npm run test:client && npm run test:server",
+    "test:all": "npm run test:server && npm run test:client",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "build": "npm run build:all",
+    "build:all": "cd server && npm run build && cd ../client && npm run build",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start": "node server.js",
+    "postinstall": "npm run build:all"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "compression": "^1.8.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "lodash": "^4.17.21",
+    "multer": "^2.0.1",
+    "socket.io": "^4.8.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

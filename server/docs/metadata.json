@@ -1,0 +1,32 @@
+{
+  "sample_data_dict": {
+    "source_system": "Sample System",
+    "description": "Sample data dictionary for testing",
+    "last_updated": "2024-12-15",
+    "itso": {
+      "owner": "Your Name",
+      "contact": "your.email@company.com",
+      "team": "Data Team"
+    },
+    "misc": {
+      "version": "1.0",
+      "environment": "Development",
+      "compliance": "Internal Use"
+    }
+  },
+"sample_data_dict_small": {
+    "source_system": "Sample System",
+    "description": "Sample data dictionary for testing",
+    "last_updated": "2024-12-15",
+    "itso": {
+      "owner": "Your Name",
+      "contact": "your.email@company.com",
+      "team": "Data Team"
+    },
+    "misc": {
+      "version": "1.0",
+      "environment": "Development",
+      "compliance": "Internal Use"
+    }
+  }
+}
